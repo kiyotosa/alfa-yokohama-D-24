@@ -91,7 +91,7 @@
         <section>
           <div class="section">
             <div class="container">
-              <h2 class="section-title section-title--keycolorlight"><span class="section-title__stage">STAGE：2</span>黒板に書かれている謎を解け！</h2>
+              <h2 class="section-title section-title--keycolorlight"><span class="section-title__stage">STAGE：2</span>工具箱をGETしろ！</h2>
               <p> class="text-center" 工具箱を見つけた！<br>
                 工具箱の中にドアを壊せる物が入っているはず...<<br>
                 工具箱と一緒に謎が書かれた紙が置いてある<br>
@@ -128,8 +128,10 @@
           <div class="container">
             <div class="clear-message">
               <div class="clear-message__title">STAGE：2　クリア！</div>
-              <div class="clear-message__content">マイナスドライバーを見つけた！<br>
-                次のステージの謎を解こう！</div>
+              <div class="clear-message__content">工具箱をGETした！
+                工具箱を開くと、マイナスドライバーがあった<br>
+                マイナスドライバーでドアを壊そうとしたが、壊すことができなかった<br>
+                もっと破壊力のある道具を見つけよう！</div>
                 <button v-on:click="nextStage('stage2')" onclick="location.href='#sectionStage3'" class="clear-message__btn btn">次のステージへ<svg class="btn__arrow"><use xlink:href="#arrow"></use></svg></button>
             </div>
           </div>
@@ -144,8 +146,8 @@
         <!-- STAGE3-1問題セクション　ここから -->
         <section class="section">
           <div class="container">
-            <h2 class="section-title section-title--keycolorlight"><span class="section-title__stage">STAGE：3</span>あ</h2>
-            <p class="text-center">マイナスドライバーで鍵のかかった部屋を開けることができた。<br>
+            <h2 class="section-title section-title--keycolorlight"><span class="section-title__stage">STAGE：3</span>バールをGETしよう</h2>
+            <p class="text-center">マイナスドライバーを使って、鍵のかかった部屋を開けることができた。<br>
               部屋を開けると、バールを発見した<br>
               お決まりのように謎が書かれた紙も置かれている...<br>
               バールは鎖で縛られていて、どうやらこの鎖を解除するには鍵が必要らしい<br>
@@ -171,8 +173,10 @@
           <div class="container">
             <div class="clear-message">
               <div class="clear-message__title">STAGE：３　クリア！</div>
-              <div class="clear-message__content">マイナスドライバーを見つけた！<br>
-                次のステージの謎を解こう！</div>
+              <div class="clear-message__content">バールをGET！<br>
+                バールでドアの破壊を試みたが、バールでも破壊することはできなかった。<br>
+              そろそろ、本当に山小屋が崩れるそうだ...<br>
+              バールより破壊力のある道具を見つけよう！</div>
               <button v-on:click="nextStage('stage3')" onclick="location.href='#sectionStage4'" class="clear-message__btn btn">次のステージへ<svg class="btn__arrow"><use xlink:href="#arrow"></use></svg></button>
             </div>
           </div>
@@ -190,12 +194,9 @@
         <section class="section">
           <div class="container">
             <h2 class="section-title section-title--keycolorlight"><span class="section-title__stage">STAGE：4</span>あ</h2>
-            <p class="text-center">マイナスドライバーで鍵のかかった部屋を開けることができた。<br>
-              部屋を開けると、バールを発見した<br>
-              お決まりのように謎が書かれた紙も置かれている...<br>
-              バールは鎖で縛られていて、どうやらこの鎖を解除するには鍵が必要らしい<br>
-              その鍵を得るにはやはり謎を解かなくてはいけないらしい<br>
-              謎を解いてバールをGETしよう！</p>
+            <p class="text-center">辺りを見渡したら一箇所だけ地面の板の色が違った<br>
+              気になってバールで板を剥がしてみたら頑丈そうな木の箱があった<br>
+              箱の横に置いてある謎が書かれた紙を早く解こう！<br>
             <figure class="image__container">
               <img src="assets/images/mondai_4.png" alt="">
             </figure>

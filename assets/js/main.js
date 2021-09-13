@@ -10,30 +10,26 @@
  *********************************************************************************************************/
 const app = Vue.createApp({
   data() {
-    /* 初期値を設定します */
     return {
-      /* 解答
-      *  ex. 問題2-3を追加する場合はstage2の配列に解答を追加します。
-      *    q3: 'おおお',
-      */
+
       correctAnswer: {
         stage1: {
           q1: 'とだなのなか',
         },
         stage2: {
           q1: 'のーと',
+
         },
         stage3: {
           q1: 'みどり',
-        },
-        stage4: {
-          q1: '1013',
-        }
-      }
 
-      /* それぞれの問題が正解かどうか
-      *  ex. 問題2-3を追加する場合は配列にfalseを追加します。
-      */
+        },
+      stage4:{
+          q1:'1013',
+
+      }
+      },
+
       answer: {
         stage1: [
           false,
@@ -43,9 +39,9 @@ const app = Vue.createApp({
         ],
         stage3: [
           false,
-        ]
-        stage4: [
-          false,
+        ],
+        stage4:[
+            false,
         ]
       },
 
@@ -98,8 +94,8 @@ app.component('answer-input', {
   data: function () {
     return {
       /* 送信ボタン上下に表示されるメッセージ */
-      okMessage: '正解のようだ！',
-      ngMessage: 'どうやら違うようだ...',
+      okMessage: '正解！',
+      ngMessage: 'そのキーワードは違うようだぞ！？',
       message: '',
       inputAnswer: '',
     }
@@ -119,7 +115,7 @@ app.component('answer-input', {
         this.message = this.okMessage;
         this.$emit('answerInput', true);
       } else { // 一致しない場合
-        this.message = this.ngMessage; 
+        this.message = this.ngMessage;
         this.$emit('answerInput', false);
       }
     },

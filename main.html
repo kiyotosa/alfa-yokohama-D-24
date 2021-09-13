@@ -17,13 +17,13 @@
   </svg>
   <header class="header">
     <div class="container">
-      <div class="header__logo"><img src="assets/images/logo.svg" alt="チームロゴ"></div>
+      <div class="header__logo"><img src="assets/images/team.png" alt="チームロゴ"></div>
       <div class="header__name">N・S高生制作サイト</div>
     </div>
   </header>
   <main class="main main-page">
     <!-- タイトルエリア　ここから -->
-    <h1 class="main-title"><img src="assets/images/top_image.png" alt="封鎖された家庭科室からの脱出"></h1>
+    <h1 class="main-title"><img src="assets/images/top_image2.png" alt="封鎖された家庭科室からの脱出"></h1>
     <!-- タイトルエリア　ここまで -->
     <div id="stage">
 
@@ -86,13 +86,7 @@
         <!-- STAGE1クリア画面　ここまで -->
 
       </div>
-      <!-- STAGE1　ここまで -->
 
-      <!-- STAGE2　ここから -->
-      <!---------------------------------------------------------------------
-        クリア画面の「次のステージへ」ボタンをクリックしたら表示します。
-        v-if="next['stage1']"はnext['stage1']がtrueになったら表示します。
-      ----------------------------------------------------------------------->
       <div v-if="next['stage1']" id="sectionStage2" class="stage">
         <section>
           <div class="section">
@@ -108,15 +102,6 @@
           <div class="stage-column__container section bg-color--keycolor">
             <div class="container">
               <h2 class="section-title"><span class="section-title__stage">STAGE：2</span>キーワードを入力</h2>
-              <!-------------------------------------------------------------
-                class名"row"内のclass名"column"が横並びになります。
-                改行する場合は以下のように追加してください。
-                <div class="row">
-                  <div class="column">
-                    ～ 内容 ～
-                  </div>
-                </div>
-              ------------------------------------------------------------->
               <div class="row">
 
                 <!-- STAGE2-1　ここから -->
@@ -199,12 +184,12 @@
 
 
       <!-- STAGE3　ここから -->
-      <div v-if="next['stage2']" id="sectionStage4" class="stage">
+      <div v-if="next['stage3']" id="sectionStage4" class="stage">
 
         <!-- STAGE4問題セクション　ここから -->
         <section class="section">
           <div class="container">
-            <h2 class="section-title section-title--keycolorlight"><span class="section-title__stage">STAGE：3</span>あ</h2>
+            <h2 class="section-title section-title--keycolorlight"><span class="section-title__stage">STAGE：4</span>あ</h2>
             <p class="text-center">マイナスドライバーで鍵のかかった部屋を開けることができた。<br>
               部屋を開けると、バールを発見した<br>
               お決まりのように謎が書かれた紙も置かれている...<br>

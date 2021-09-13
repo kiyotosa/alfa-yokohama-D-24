@@ -28,7 +28,7 @@ const app = Vue.createApp({
         },
         stage4: {
           q1: '1013',
-        },
+        }
       }
 
       /* それぞれの問題が正解かどうか
@@ -39,13 +39,13 @@ const app = Vue.createApp({
           false,
         ],
         stage2: [
-          false, 
+          false,
         ],
         stage3: [
-          false, 
+          false,
         ]
         stage4: [
-          false, 
+          false,
         ]
       },
 
